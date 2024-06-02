@@ -2,7 +2,7 @@
 
 ## 📝 About This Project
 
-Welcome to my delightful Weather Application, meticulously crafted with HTML, CSS, and JavaScript. This application integrates with the OpenWeatherMap API to provide real-time weather data and features dynamic backgrounds from Unsplash with every search. Dive into the beauty of weather and the world through this innovative tool.
+Welcome to my delightful Weather Application, meticulously crafted with HTML, CSS, and JavaScript. This Web application integrates with the OpenWeatherMap API to provide real-time weather data and features dynamic backgrounds from Unsplash with every search. Dive into the beauty of weather and the world through this innovative tool.
 
 ## 🎯 Key Features
 

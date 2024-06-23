@@ -6,10 +6,15 @@ let weather={
          + "&units=metric&appid="
          + this.apikey
         )
-        .then((response)=>response.json())
-        .then((data)=>this.displayWeather(data));
-
-    },
+        .then((response) => {
+            if (!response.ok) {
+              alert("No weather found.");
+              throw new Error("No weather found.");
+            }
+            return response.json();
+          })
+          .then((data) => this.displayWeather(data));
+      },
 
     displayWeather: function(data){
 
@@ -25,8 +30,7 @@ let weather={
         document.querySelector(".humidity").innerText="humidity " + humidity +"%";
         document.querySelector(".wind").innerText="wind speed" + speed +"km/h";
         document.querySelector(".weather").classList.remove("loading");
-        document.body.style.backgroundImage="url('https://source.unsplash.com/random/? " + name + " /')";
-    },
+        document.body.style.backgroundImage = `url('https://source.unsplash.com/1600x900/random/?${name}')`;    },
     search: function(){
         this.fetchWeather(document.querySelector(".search-bar").value);
    }

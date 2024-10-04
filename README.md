@@ -6,7 +6,7 @@ Welcome to this Weather Application, crafted with HTML, CSS, and JavaScript. Thi
 
 ## 🌐 Live Demo
 
-Experience the Weather Application in action: [Weather Application](https://your-live-link-here.com)
+Experience the Weather Application in action: [Weather Application](https://astonishing-zabaione-433b6c.netlify.app/)
 
 ## 🎯 Key Features
 
@@ -38,7 +38,7 @@ This project uses an OpenWeatherMap API key. For security reasons, it's recommen
 
 ## 🚀 Getting Started
 
-1. Visit the [live demo](https://your-live-link-here.com) to use the application directly in your browser.
+1. Visit the [live demo](https://astonishing-zabaione-433b6c.netlify.app/) to use the application directly in your browser.
 2. Alternatively, clone the repository to your local machine:
    ```
    git clone https://github.com/your-username/weather-application.git

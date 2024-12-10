@@ -5,12 +5,17 @@ let weather = {
             "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + this.apikey
         )
         .then(response => {
-            if (!response.ok) {
-                alert("No weather found.");
-                throw new Error("No weather found.");
-            }
-            return response.json();
-        })
+    if (!response.ok) {
+        if (response.status === 404) {
+            alert("City not found. Please try again.");
+        } else {
+            alert("An error occurred while fetching data.");
+        }
+        throw new Error("Failed to fetch weather data");
+    }
+    return response.json();
+})
+
         .then(data => this.displayWeather(data));
     },
 
